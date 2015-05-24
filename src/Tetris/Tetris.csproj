@@ -51,60 +51,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutBox.cs">
+    <Compile Include="Forms\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutBox.Designer.cs">
+    <Compile Include="Forms\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmStart.cs">
+    <Compile Include="Forms\frmStart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmStart.Designer.cs">
+    <Compile Include="Forms\frmStart.Designer.cs">
       <DependentUpon>frmStart.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSettings.cs">
+    <Compile Include="Forms\frmSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSettings.Designer.cs">
+    <Compile Include="Forms\frmSettings.Designer.cs">
       <DependentUpon>frmSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmScore.cs">
+    <Compile Include="Forms\frmScore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmScore.Designer.cs">
+    <Compile Include="Forms\frmScore.Designer.cs">
       <DependentUpon>frmScore.cs</DependentUpon>
     </Compile>
-    <Compile Include="TetrisSettings.cs" />
-    <Compile Include="Scores.cs" />
-    <Compile Include="Square.cs" />
-    <Compile Include="PieceType.cs" />
-    <Compile Include="frmTetris.cs">
+    <Compile Include="GameEngine\TetrisSettings.cs" />
+    <Compile Include="GameEngine\Scores.cs" />
+    <Compile Include="GameEngine\Square.cs" />
+    <Compile Include="GameEngine\PieceType.cs" />
+    <Compile Include="Forms\frmTetris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTetris.Designer.cs">
+    <Compile Include="Forms\frmTetris.Designer.cs">
       <DependentUpon>frmTetris.cs</DependentUpon>
     </Compile>
-    <Compile Include="Piece.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="GameEngine\Piece.cs" />
+    <Compile Include="GameEngine\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AboutBox.resx">
+    <EmbeddedResource Include="Forms\AboutBox.resx">
       <SubType>Designer</SubType>
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmStart.resx">
+    <EmbeddedResource Include="Forms\frmStart.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmStart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSettings.resx">
+    <EmbeddedResource Include="Forms\frmSettings.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmScore.resx">
+    <EmbeddedResource Include="Forms\frmScore.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmScore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTetris.resx">
+    <EmbeddedResource Include="Forms\frmTetris.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmTetris.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,7 +127,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Tetris.cs" />
+    <Compile Include="GameEngine\Tetris.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\block.png" />
