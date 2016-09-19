@@ -106,7 +106,7 @@ namespace Tetris {
                 for (int j = nColumns; j >= 0; j--)
                     P[i, j].IsOccuped = Occuped.No;
             gameTime.Stop();
-            MessageBox.Show("You have lost, your score is:" + ScoreLabel.Text);
+            MessageBox.Show("Hai perso, ti puzzano le palle. Your score is:" + ScoreLabel.Text);
             Scores.CheckIfSaveScore(int.Parse(ScoreLabel.Text));
             if (MessageBox.Show(" Do you want play again?", "Game Over", MessageBoxButtons.YesNo) ==
                 DialogResult.Yes) {
